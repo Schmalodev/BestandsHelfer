@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='stand.css')}}">
+    <link rel="stylesheet" th:href="@{/stand.css}">
     <title>Stand</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
     </div>
 
     <div class="container">
-        <div class="item">
+        <form action="/stand" method="post" class="item">
             <div>
-                <h3>DachLaten</h3>
-                <input type="number" value="12">
+                <h3>Dachlaten</h3>
+                <input type="number" placeholder="">
                 <button>Save</button>
             </div>
         </div>
