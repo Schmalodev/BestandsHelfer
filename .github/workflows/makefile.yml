@@ -14,11 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install dependencies
-      run: make install
-
-    - name: Run Unit Test
-      run: make unit-test
-
-    - name: Run Integration Test
-      run: make integration-test
+    - name: Run Tests
+      run: make test
